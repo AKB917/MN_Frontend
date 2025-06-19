@@ -51,7 +51,7 @@ function Article(props) {
 				  <div className={styles.articleHeader}>
 					  <h3>{props.title}</h3>
 					  <FontAwesomeIcon onClick={() => handleBookmarkClick()} icon={faBookmark} style={iconStyle} className={styles.bookmarkIcon} />
-					  <FontAwesomeIcon onClick={() => handleishidde()} icon={faEyeSlash} style={iconStyle} className={styles.hiddenkIcon} />
+					  <FontAwesomeIcon onClick={() => handleishidde()} icon={faEyeSlash}  className={styles.hiddenkIcon} />
 				  </div>
 				  <h4 style={{ textAlign: "right" }}>- {props.author}</h4>
 				  <div className={styles.divider}></div>
