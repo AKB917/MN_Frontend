@@ -18,7 +18,8 @@ function Home() {
   useEffect(() => {
     fetch(`${URLBACKEND}/articles`)
       .then(response => response.json())
-      .then(data => {
+      .then(data => { console.log("data.articles[0] =", data.articles[0]);
+
         setTopArticle(data.articles[0]);
         setArticlesData(data.articles.filter((data, i) => i > 0));
       });
